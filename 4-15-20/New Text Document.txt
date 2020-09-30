@@ -1,0 +1,45 @@
+This week’s exercise is based upon last week’s two codes. This week you must construct one new script (function) with each portion of code 1 and code 2 which are to be ‘called’ as subfunctions from the main function. So, first, please name your function script as: yourlastnameexercise4. You can debug and execute the code via the on-line Matlab (through your browser,) or by FreeMat, or by the Matlab app on your device.
+
+This exercise will demonstrate your usage of functions.
+
+I’ve re-added jpegs from Chapter 6 (section 6.5) as reference material for reading. Note: sub functions are still called function even if they are being used as a ‘subfunction’ so don’t call them subfunction In the code.
+
+The general procedure to complete a function script is:
+1. Start with a function (which is generally called the main function) and name the script yourlastnameexercise4. Also, use that same name for the main function ‘call’ in the first line: yourlastnameexercise4. See the subfunctionexample I uploaded in Canvas Files. That is a very simple example and you need to expand and rename things appropriate for your calculations. Don’t forget the comments!
+
+2. Then, you must configure the ‘call’ of the ‘subfunctions’ in order to calculate and return the results to the main function. Note these function calls have no input to the subfunctions so whatever you decide to call the subfunction then right after that the argument is just () … so that means the call passes nothing to the subfunction. Another change I want you to perform is to display each of the subfunction results in the main function not the subfunctions. So, remove the disp functions from the subfunctions and place them in the main function right after you return the each subfunction result.
+
+3. Next, you must configure each of the subfunctions with a different name and then include them within the same script but right after the main portion of the function. There is no special command to separate the functions … just leave an open line between them. See the example.
+
+The Chapter 6 reference jpegs are in the Files section of your Canvas website. Please read them to help construct your function script. There are examples in section 6.5 (jpegs in the Files section of Canvas).
+
+The following are the codes to be used for each subfunction but they are not set-up with the function line at the beginning. You reconfigure them with the function line at the beginning of each, and then call them from the main function. … see examples from Chapter 6 … again, note: I want the disp(a) removed from these and moved to the main function right after each function is called for these subfunctions. Also, remember to call the subfunction, just function, not subfunction.
+
+
+
+
+
+
+[9:50 PM, 4/14/2020] Asad Sheikh Matlab: This week’s exercise is based upon last week’s script development with functions. Please read Chapter 7.2.2 (see textbook images posted) in the files section on fprintf for help in formatting your output. Basically you need a formatting type and your output variable in the fprintf function to ‘print’ your output to your screen. The formatting type is something like: ‘%4.0f’ . You can use others but this will just look like integers. If you use %4.1f then there will be one decimal position. So, the fprintf function becomes
+
+fprintf(‘%4.0f’, x)
+
+You place this after you call your sub function and assign the output of that function to x. So, first:
+
+x = code1();
+
+You do this for each sub function you call but you need to assign each function to a different variable name (not the same x). After each call, and assignment to a variable, then you write your fprintf function.
+
+This exercise will demonstrate your usage of fprintf.
+
+Also, instead of using the disp function as you did last week, this will cure the problem of disp writing over your previous results, as in last week’s exercise.
+
+You can also experiment with other types of output … maybe try creating a randomized image via the images function which we demonstrated in the first part of the semester … imagesc(rand(8)). I put this in a third sub function and I added a third numerical result assigned with result3 = rand(1,9) I also tried with a surface image function: surf(8). Then by calling the function from the main function it launches figure windows displaying the images, as well as passing the numerical results from rand(1,9) to the main function with the appropriate assignment for the function call.
+
+Please study my function script, make minor changes it in ways that you wish, also make comments among within the script, and submit.
+
+My function script runs in the on-line version of Matlab, and the Freemat (but in FreeMat you must type the script name in the command line window not by running the green run triangle).
+
+
+
+[9:50 PM, 4/14/2020] Asad Sheikh Matlab: My last name is ALHUSAINI

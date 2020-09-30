@@ -1,0 +1,15 @@
+function [x1,x2]=Q02(a,b)
+D=1;
+for i=1:length(a)
+   D=D*a(i);
+end 
+cube=sum(a.^3);
+b_sqr=sum(b.^2);
+a_sqr=sum(a.^2)
+matrix=[cube*b_sqr,b_sqr*a_sqr;
+    b_sqr*a_sqr, sum(a./(b.^2))];
+B=[D/b_sqr;sum(1./a)];
+C=inv(matrix)*B;
+x1=C(1);
+x2=C(2);
+end 
