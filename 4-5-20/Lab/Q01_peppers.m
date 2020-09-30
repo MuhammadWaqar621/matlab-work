@@ -1,0 +1,9 @@
+clc
+clear 
+close 
+RGB=imread('peppers.png');
+I=rgb2gray(RGB);
+figure(1)
+imshow(I)
+figure(2)
+imshow('peppers.png')
