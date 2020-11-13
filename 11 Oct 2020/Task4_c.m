@@ -1,0 +1,24 @@
+clc
+clear 
+close all
+k=5;
+m=0.5;
+T=10;
+N=100;
+v0=.1;
+x0=1;
+time=linspace(0,T,N);
+beta=3;
+[x,v]=Task04(x0,v0,k,m,T,N,beta);
+plot(time,x)
+title('beta=3')
+grid 
+xlabel('t')
+ylabel('x')
+figure
+beta=10;
+[x,v]=Task04(x0,v0,k,m,T,N,beta);
+plot(time,x)
+xlabel('t')
+ylabel('x')
+title('beta=10')
